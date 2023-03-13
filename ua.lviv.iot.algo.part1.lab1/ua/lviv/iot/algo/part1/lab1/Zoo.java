@@ -1,5 +1,6 @@
 package ua.lviv.iot.algo.part1.lab1;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -9,24 +10,16 @@ import lombok.NoArgsConstructor;
 @Setter
 @ToString
 @NoArgsConstructor
+@AllArgsConstructor
 public class Zoo {
-    private static Zoo instance;
+    private static Zoo instance = new Zoo();
     private String name;
     private String location;
     private double area;
     private int capacity;
 
-
     public static Zoo getInstance() {
-        instance = new Zoo();
         return instance;
-    }
-
-    public Zoo(String name, String location, double area, int capacity) {
-        this.name = name;
-        this.location = location;
-        this.area = area;
-        this.capacity = capacity;
     }
     
     public void increaseCapacity(int count) {
@@ -41,11 +34,8 @@ public class Zoo {
         this.area += area;
     }
 
-    public static void println(Object object) {
-        System.out.println(object);
-    }
-
     public static void main(String[] args) {
+        int i = 0;
         Zoo[] zoos = new Zoo[4];
 
         zoos[0] = new Zoo();
@@ -54,7 +44,14 @@ public class Zoo {
         zoos[3] = Zoo.getInstance();
 
         for (Zoo zoo : zoos) {
-            println(zoo);
+            System.out.println(zoo);
         }
+
+        System.out.println("While loop:");
+
+        do {
+            System.out.println(zoos[i]);
+            i++;            
+        } while (i<zoos.length);
     }
 }
