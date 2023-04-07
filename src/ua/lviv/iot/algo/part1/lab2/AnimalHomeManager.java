@@ -1,14 +1,14 @@
 package ua.lviv.iot.algo.part1.lab2;
 import java.sql.Time;
-import java.util.LinkedList;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.*;
 
 public class AnimalHomeManager {
-    private List<AbstractAnimalHome> animalHomes = new LinkedList<>();
+    public List<AbstractAnimalHome> animalHomes = new ArrayList<>();
 
     public void addAnimalHome(AbstractAnimalHome animalHome) {
-        animalHomes.add(animalHome);
+        this.animalHomes.add(animalHome);
     }
 
     // 1. Find the cheapest animal home
@@ -94,8 +94,8 @@ public class AnimalHomeManager {
         System.out.println();
         
         // print all animal homes with the area less than 200 each on a new line
-        System.out.println("Animal homes with the area less than 200:");
-        manager.findAnimalHomesWithAreaLessThan(200).forEach(System.out::println);
+        System.out.println("Animal homes with the area less than 201:");
+        manager.findAnimalHomesWithAreaLessThan(201).forEach(System.out::println);
     }
     
     
