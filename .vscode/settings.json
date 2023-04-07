@@ -1,0 +1,11 @@
+{
+    "java.project.sourcePaths": [
+        "src",
+        "ua.lviv.iot.algo.part1.lab1"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "/home/volodymyr/Downloads/lombok.jar"
+    ]
+}
