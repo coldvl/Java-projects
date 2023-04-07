@@ -34,11 +34,6 @@
 			<scope>test</scope>
 		</dependency>
   </dependencies>
-  <dependency>
-    <groupId>io.mateu</groupId>
-    <artifactId>prelombok</artifactId>
-    <version>1.18.11.96</version>
-</dependency>
 
   <properties>
     <maven.compiler.source>17</maven.compiler.source>
