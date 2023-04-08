@@ -14,5 +14,18 @@ public class TestForSanctuary
     public void testCalculateCostPerMonth() {
         TestCase.assertEquals(12000, sanctuary.calculateCostPerMonth());
     }
+
+    //test getters
+    @Test
+    public void testGetters() {
+        TestCase.assertEquals("Friendly Farms", sanctuary.getName());
+        TestCase.assertEquals(100.0, sanctuary.getArea());
+        TestCase.assertEquals(20, sanctuary.getNumberOfAnimals());
+        TestCase.assertEquals(10, sanctuary.getNumberOfEndangeredAnimals());
+        TestCase.assertEquals("Canada", sanctuary.getLocation());
+        TestCase.assertEquals(10, sanctuary.getCostPerDayPerAnimal());
+        TestCase.assertEquals(20, sanctuary.getCostPerDayPerEndangeredAnimal());
+        
+    }
     
 }
