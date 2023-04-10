@@ -11,6 +11,7 @@ public class Sanctuary extends AbstractAnimalHome{
     private int numberOfAnimals;
     private int costPerDayPerAnimal;
     private int costPerDayPerEndangeredAnimal;
+    public static final int DAYS_IN_MONTH = 30;
 
     public Sanctuary(String name, String location, double area, int numberOfEndangeredAnimals, int numberOfAnimals, int costPerDayPerAnimal, int costPerDayPerEndangeredAnimal) {
         super(name, location, area);
@@ -22,7 +23,6 @@ public class Sanctuary extends AbstractAnimalHome{
 
     @Override
     public int calculateCostPerMonth() {
-        return (costPerDayPerAnimal * numberOfAnimals + costPerDayPerEndangeredAnimal * numberOfEndangeredAnimals) * 30;
-    }
-    
+        return (costPerDayPerAnimal * numberOfAnimals + costPerDayPerEndangeredAnimal * numberOfEndangeredAnimals) * DAYS_IN_MONTH;
+    }  
 }

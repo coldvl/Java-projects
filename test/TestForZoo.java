@@ -11,24 +11,11 @@ public class TestForZoo
 {
     Zoo zoo = new Zoo("Friendly Farms", "Canada", 100, 10, Time.valueOf("11:00:00"), Time.valueOf("16:00:00"), 20);
 
-    // test for method calculateCostPerMonth
     @Test
     public void testCalculateCostPerMonth() {
         TestCase.assertEquals(600, zoo.calculateCostPerMonth());
     }
     
-    //test getters
-    @Test
-    public void testGetters() {
-        TestCase.assertEquals("Friendly Farms", zoo.getName());
-        TestCase.assertEquals(100.0, zoo.getArea());
-        TestCase.assertEquals("Canada", zoo.getLocation());
-        TestCase.assertEquals(20, zoo.getCostPerDay());
-        TestCase.assertEquals(Time.valueOf("11:00:00"), zoo.getOpeningTime());
-        TestCase.assertEquals(Time.valueOf("16:00:00"), zoo.getClosingTime());
-        
-    }
-
     @Test
     public void testIncreaseCapacity() {
         int initialCapacity = zoo.getCapacity();

@@ -6,10 +6,11 @@ import lombok.*;
 @ToString
 @NoArgsConstructor
 
-public class Aquarium extends AbstractAnimalHome{
+public class Aquarium extends AbstractAnimalHome {
     private int costPerDayPerFish;
     private int numberOfFishInOneAquarium;
     private int numberOfAquariums;
+    public static final int DAYS_IN_MONTH = 30;
 
     public Aquarium(String name, String location, double area, int costPerDayPerFish, int numberOfFishInOneAquarium, int numberOfAquariums) {
         super(name, location, area);
@@ -20,7 +21,6 @@ public class Aquarium extends AbstractAnimalHome{
 
     @Override
     public int calculateCostPerMonth() {
-        return costPerDayPerFish * 30 * numberOfFishInOneAquarium * numberOfAquariums;
+        return costPerDayPerFish * DAYS_IN_MONTH * numberOfFishInOneAquarium * numberOfAquariums;
     }
-    
 }

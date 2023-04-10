@@ -10,6 +10,5 @@ public abstract class AbstractAnimalHome {
     private String location;
     protected double area;
 
-    public abstract int calculateCostPerMonth();
-    
+    public abstract int calculateCostPerMonth();   
 }

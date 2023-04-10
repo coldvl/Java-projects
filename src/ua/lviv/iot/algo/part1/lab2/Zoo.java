@@ -10,14 +10,14 @@ import lombok.NoArgsConstructor;
 @ToString
 @NoArgsConstructor
 public class Zoo extends AbstractAnimalHome {
-    
     private int capacity;
     private Time openingTime;
     private Time closingTime;
     private int costPerDay;
+    public static final int DAYS_IN_MONTH = 30;
 
     
-    public void increaseCapacity(int count) {
+    public void increaseCapacity(final int count) {
         capacity += count;
     }
 
@@ -25,11 +25,10 @@ public class Zoo extends AbstractAnimalHome {
         area /= 2;
     }
 
-    public void addNewRegion(double area) {
+    public void addNewRegion(final double area) {
         this.area += area;
     }
 
-    //create constructor
     public Zoo(String name, String location, double area, int capacity, Time openingTime, Time closingTime, int costPerDay) {
         super(name, location, area);
         this.capacity = capacity;
@@ -40,7 +39,7 @@ public class Zoo extends AbstractAnimalHome {
 
     @Override
     public int calculateCostPerMonth() {
-        return costPerDay * 30;
+        return costPerDay * DAYS_IN_MONTH;
     }
 
 }
