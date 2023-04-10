@@ -2,17 +2,13 @@ package ua.lviv.iot.algo.part1.lab2;
 
 import java.sql.Time;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.Setter;
 import lombok.ToString;
 import lombok.NoArgsConstructor;
 
 @Getter
-@Setter
 @ToString
 @NoArgsConstructor
-@AllArgsConstructor
 public class Zoo extends AbstractAnimalHome {
     
     private int capacity;
@@ -31,10 +27,6 @@ public class Zoo extends AbstractAnimalHome {
 
     public void addNewRegion(double area) {
         this.area += area;
-    }
-
-    public static void println(Object object) {
-        System.out.println(object);
     }
 
     //create constructor

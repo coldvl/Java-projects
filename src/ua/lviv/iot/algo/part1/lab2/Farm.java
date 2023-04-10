@@ -3,10 +3,7 @@ package ua.lviv.iot.algo.part1.lab2;
 import lombok.*;
 
 @Getter
-@Setter
 @ToString
-@NoArgsConstructor
-@AllArgsConstructor
 
 public class Farm extends AbstractAnimalHome{
     private int capacity;

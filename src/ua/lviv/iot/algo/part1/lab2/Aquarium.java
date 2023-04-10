@@ -3,10 +3,8 @@ package ua.lviv.iot.algo.part1.lab2;
 import lombok.*;
 
 @Getter
-@Setter
 @ToString
 @NoArgsConstructor
-@AllArgsConstructor
 
 public class Aquarium extends AbstractAnimalHome{
     private int costPerDayPerFish;

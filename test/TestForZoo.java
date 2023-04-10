@@ -2,7 +2,6 @@ import java.sql.Time;
 
 import org.junit.Test;
 import junit.framework.TestCase;
-import ua.lviv.iot.algo.part1.lab2.AnimalHomeManager;
 import ua.lviv.iot.algo.part1.lab2.Zoo;
 
 
@@ -31,12 +30,29 @@ public class TestForZoo
     }
 
     @Test
-    public void testAddNewRegion() {
-        double initialArea = 1000;
-        double newArea = 500;
-        this.zoo.addNewRegion(newArea);
-        double expectedArea = initialArea + newArea;
-        double actualArea = animalHome.getArea();
-        assertEquals(expectedArea, actualArea, 0.01);
+    public void testIncreaseCapacity() {
+        int initialCapacity = zoo.getCapacity();
+        int count = 10;
+        zoo.increaseCapacity(count);
+        int newCapacity = zoo.getCapacity();
+        TestCase.assertEquals(initialCapacity + count, newCapacity);
     }
+
+    @Test
+    public void testSplitArea() {
+        double initialArea = zoo.getArea();
+        zoo.splitArea();
+        double newArea = zoo.getArea();
+        TestCase.assertEquals(initialArea / 2, newArea, 0.001);
+    }
+
+    @Test
+    public void testAddNewRegion() {
+        double initialArea = zoo.getArea();
+        double additionalArea = 10.0;
+        zoo.addNewRegion(additionalArea);
+        double newArea = zoo.getArea();
+        TestCase.assertEquals(initialArea + additionalArea, newArea, 0.001);
+    }
+
 }
