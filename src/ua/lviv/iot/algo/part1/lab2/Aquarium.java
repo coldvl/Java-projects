@@ -1,6 +1,9 @@
 package ua.lviv.iot.algo.part1.lab2;
 
-import lombok.*;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Getter
 @ToString
@@ -22,5 +25,15 @@ public class Aquarium extends AbstractAnimalHome {
     @Override
     public int calculateCostPerMonth() {
         return costPerDayPerFish * DAYS_IN_MONTH * numberOfFishInOneAquarium * numberOfAquariums;
+    }
+
+    @Override
+    public String getHeaders() {
+        return super.getHeaders() + "," + "costPerDayPerFish" + "," + "numberOfFishInOneAquarium" + "," + "numberOfAquariums";
+    }
+
+    @Override
+    public String toCSV() {
+        return super.toCSV() + "," + costPerDayPerFish + "," + numberOfFishInOneAquarium + "," + numberOfAquariums;
     }
 }

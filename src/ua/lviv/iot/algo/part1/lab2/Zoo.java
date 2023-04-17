@@ -42,4 +42,14 @@ public class Zoo extends AbstractAnimalHome {
         return costPerDay * DAYS_IN_MONTH;
     }
 
+    @Override
+    public String getHeaders() {
+        return super.getHeaders() + ", capacity, openingTime, closingTime, costPerDay";
+    }
+
+    @Override
+    public String toCSV() {
+        return super.toCSV() + ", " + capacity + ", " + openingTime + ", " + closingTime + ", " + costPerDay;
+    }
+
 }

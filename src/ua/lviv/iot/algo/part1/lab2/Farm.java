@@ -1,6 +1,7 @@
 package ua.lviv.iot.algo.part1.lab2;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.ToString;
 
 @Getter
 @ToString
@@ -22,4 +23,15 @@ public class Farm extends AbstractAnimalHome{
     public int calculateCostPerMonth() {
         return costPerAnimalperDay * DAYS_IN_MONTH * capacity;
     }
+
+    @Override
+    public String getHeaders() {
+        return super.getHeaders() + "," + "capacity" + "," + "costPerAnimalperDay" + "," + "animalType";
+    }
+
+    @Override
+    public String toCSV() {
+        return super.toCSV() + "," + capacity + "," + costPerAnimalperDay + "," + animalType;
+    }
+
 }
