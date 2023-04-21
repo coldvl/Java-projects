@@ -2,15 +2,19 @@ package ua.lviv.iot.algo.part1.lab2;
 
 import java.sql.Time;
 import java.util.List;
+import java.util.ArrayList;
 import java.util.stream.Collectors;
 import lombok.Getter;
-import ua.lviv.iot.algo.part1.lab2.AnimalHomeToCSV;
-
+import java.io.IOException;
 
 @Getter
 
 public class AnimalHomeManager {
-    private List<AbstractAnimalHome> animalHomes;
+    private List<AbstractAnimalHome> animalHomes = new ArrayList<>();
+
+    public void writeToFile() throws IOException {
+        AnimalHomeToCSV.writeToFile(animalHomes);
+    }
 
     public void addAnimalHome(final AbstractAnimalHome animalHome) {
         this.animalHomes.add(animalHome);
@@ -42,6 +46,12 @@ public class AnimalHomeManager {
         manager.addAnimalHome(new Sanctuary("Sanctuary of the White Lion", "South Africa", 200, 60, 20, 20, 100));
         manager.addAnimalHome(new Sanctuary("The Elephant Sanctuary", "USA", 300, 90, 30, 30, 150));
 
+        try {
+            manager.writeToFile();
+            System.out.println("Data written to file successfully.");
+        } catch (IOException e) {
+            System.err.println("Error writing data to file: " + e.getMessage());
+        }
         
     }
 }

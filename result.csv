@@ -1,0 +1,32 @@
+name, location, area,capacity,costPerAnimalperDay,animalType
+Wild Bluff Ranch, USA, 200.0,15,10,Cow
+name, location, area, capacity, openingTime, closingTime, costPerDay
+Limpopo, Lviv, 100.0, 20, 10:00:00, 18:00:00, 30
+name, location, area,capacity,costPerAnimalperDay,animalType
+Sunset Farms, California, 300.0,25,10,Pig
+name, location, area, capacity, openingTime, closingTime, costPerDay
+Lviv Zoo, Lviv, 200.0, 30, 10:00:00, 18:00:00, 30
+name, location, area,capacity,costPerAnimalperDay,animalType
+End of the World Fields, California, 300.0,25,10,Pig
+name, location, area,capacity,costPerAnimalperDay,animalType
+Coral Kingdom, Australia, 500.0,50,100,Tropical Fish
+name, location, area,capacity,costPerAnimalperDay,animalType
+Sky High Aviary, USA, 150.0,10,15,Parrots
+name, location, area, capacity, openingTime, closingTime, costPerDay
+Friendly Farms, Canada, 100.0, 10, 11:00:00, 16:00:00, 20
+name, location, area,capacity,costPerAnimalperDay,animalType
+Serengeti Plains, Tanzania, 1000.0,100,45,Elephants
+name, location, area,capacity,costPerAnimalperDay,animalType
+Dragon's Den, USA, 200.0,20,30,Snakes
+name, location, area,costPerDayPerFish,numberOfFishInOneAquarium,numberOfAquariums
+Aquarium of the Pacific, USA, 100.0,10,10,10
+name, location, area,costPerDayPerFish,numberOfFishInOneAquarium,numberOfAquariums
+Shedd Aquarium, USA, 200.0,20,20,20
+name, location, area,costPerDayPerFish,numberOfFishInOneAquarium,numberOfAquariums
+National Aquarium, USA, 300.0,30,30,30
+name, location, area,numberOfEndangeredAnimals,numberOfAnimals,costPerDayPerAnimal,costPerDayPerEndangeredAnimal
+The Wild Animal Sanctuary, USA, 100.0,30,10,10,50
+name, location, area,numberOfEndangeredAnimals,numberOfAnimals,costPerDayPerAnimal,costPerDayPerEndangeredAnimal
+Sanctuary of the White Lion, South Africa, 200.0,60,20,20,100
+name, location, area,numberOfEndangeredAnimals,numberOfAnimals,costPerDayPerAnimal,costPerDayPerEndangeredAnimal
+The Elephant Sanctuary, USA, 300.0,90,30,30,150
