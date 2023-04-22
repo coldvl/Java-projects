@@ -1,10 +1,19 @@
-package ua.lviv.iot.algo.part1.lab2;
+package main.java.ua.lviv.iot.algo.part1.lab2;
 
 import java.sql.Time;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
 import lombok.Getter;
+import main.java.ua.lviv.iot.algo.part1.lab2.models.AbstractAnimalHome;
+import main.java.ua.lviv.iot.algo.part1.lab2.models.Aquarium;
+import main.java.ua.lviv.iot.algo.part1.lab2.models.Farm;
+import main.java.ua.lviv.iot.algo.part1.lab2.models.Sanctuary;
+import main.java.ua.lviv.iot.algo.part1.lab2.models.Zoo;
+
+import main.java.ua.lviv.iot.algo.part1.lab2.utils.AnimalHomeToCSV;
+
+
 import java.io.IOException;
 
 @Getter
@@ -13,7 +22,7 @@ public class AnimalHomeManager {
     private List<AbstractAnimalHome> animalHomes = new ArrayList<>();
 
     public void writeToFile() throws IOException {
-        AnimalHomeToCSV.writeToFile(animalHomes);
+        AnimalHomeToCSV.writeToFile(animalHomes, "result.csv");
     }
 
     public void addAnimalHome(final AbstractAnimalHome animalHome) {

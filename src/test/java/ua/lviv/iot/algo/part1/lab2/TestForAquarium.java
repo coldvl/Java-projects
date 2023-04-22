@@ -13,5 +13,15 @@ public class TestForAquarium
     public void testCalculateCostPerMonth() {
         TestCase.assertEquals(30000, aquarium.calculateCostPerMonth());
     }
+
+    @Test
+    public void testGetHeaders() {
+        TestCase.assertEquals("name, location, area,costPerDayPerFish,numberOfFishInOneAquarium,numberOfAquariums", aquarium.getHeaders());
+    }
+
+    @Test
+    public void testToCSV() {
+        TestCase.assertEquals("Aquarium of the Pacific, USA, 100.0,10,10,10", aquarium.toCSV());
+    }
     
 }

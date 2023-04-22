@@ -42,4 +42,14 @@ public class TestForZoo
         TestCase.assertEquals(initialArea + additionalArea, newArea, 0.001);
     }
 
+    @Test
+    public void testGetHeaders() {
+        TestCase.assertEquals("name, location, area, capacity, openingTime, closingTime, costPerDay", zoo.getHeaders());
+    }
+
+    @Test
+    public void testToCSV() {
+        TestCase.assertEquals("Friendly Farms, Canada, 100.0, 10, 11:00:00, 16:00:00, 20", zoo.toCSV());
+    }
+
 }

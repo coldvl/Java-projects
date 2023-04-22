@@ -1,4 +1,4 @@
-package ua.lviv.iot.algo.part1.lab2;
+package main.java.ua.lviv.iot.algo.part1.lab2.models;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
