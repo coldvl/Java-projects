@@ -1,12 +1,13 @@
+package ua.lviv.iot.algo.part1.lab2;
+
 import java.sql.Time;
 
 import org.junit.Test;
 import junit.framework.TestCase;
-import ua.lviv.iot.algo.part1.lab2.Zoo;
+import ua.lviv.iot.algo.part1.lab2.models.Zoo;
 
 
-
-public class TestForZoo 
+public class TestForZoo
     extends Zoo
 {
     Zoo zoo = new Zoo("Friendly Farms", "Canada", 100, 10, Time.valueOf("11:00:00"), Time.valueOf("16:00:00"), 20);

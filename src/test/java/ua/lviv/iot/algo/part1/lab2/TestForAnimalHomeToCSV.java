@@ -1,3 +1,5 @@
+package ua.lviv.iot.algo.part1.lab2;
+
 import org.junit.Test;
 import ua.lviv.iot.algo.part1.lab2.models.AbstractAnimalHome;
 import ua.lviv.iot.algo.part1.lab2.models.Aquarium;
@@ -31,7 +33,7 @@ public class TestForAnimalHomeToCSV extends AnimalHomeToCSV{
     public void testWriteToFile() throws IOException {
         AnimalHomeToCSV.writeToFile(homes, filename);
         List<String> actualLines = Files.readAllLines(Paths.get(filename));
-        List<String> expectedLines = Files.readAllLines(Paths.get("/home/volodymyr/javaLearning/Java-projects/expected.csv"));
+        List<String> expectedLines = Files.readAllLines(Paths.get("expected.csv"));
         assertEquals(expectedLines.size(), actualLines.size());
         for (int i = 0; i < expectedLines.size(); i++) {
             assertEquals(expectedLines.get(i), actualLines.get(i));

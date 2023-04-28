@@ -1,3 +1,6 @@
+package ua.lviv.iot.algo.part1.lab2;
+
+import junit.framework.TestCase;
 import org.junit.Test;
 import ua.lviv.iot.algo.part1.lab2.models.Sanctuary;
 

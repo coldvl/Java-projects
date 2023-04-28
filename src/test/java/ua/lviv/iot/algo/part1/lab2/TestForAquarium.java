@@ -1,10 +1,12 @@
+package ua.lviv.iot.algo.part1.lab2;
+
+
 import org.junit.Test;
 import junit.framework.TestCase;
-import ua.lviv.iot.algo.part1.lab2.Aquarium;
+import ua.lviv.iot.algo.part1.lab2.models.Aquarium;
 
 
-
-public class TestForAquarium 
+public class TestForAquarium
     extends Aquarium
 {
     

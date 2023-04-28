@@ -1,4 +1,6 @@
-package main.java.ua.lviv.iot.algo.part1.lab2.utils;
+package ua.lviv.iot.algo.part1.lab2.utils;
+
+import ua.lviv.iot.algo.part1.lab2.models.AbstractAnimalHome;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -8,7 +10,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import main.java.ua.lviv.iot.algo.part1.lab2.models.AbstractAnimalHome;
 
 public class AnimalHomeToCSV {
     public static void writeToFile(List<AbstractAnimalHome> animalHomes, String fileName) throws IOException {
