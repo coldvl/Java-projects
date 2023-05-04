@@ -1,4 +1,0 @@
-name, location, area,costPerDayPerFish,numberOfFishInOneAquarium,numberOfAquariums
-Aquarium of the Pacific, USA, 100.0,10,10,10
-name, location, area, capacity, openingTime, closingTime, costPerDay
-Friendly Farms, Canada, 100.0, 10, 11:00:00, 16:00:00, 20

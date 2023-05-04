@@ -1,9 +1,0 @@
-digraph "ua.lviv.iot:Java-projects:jar:1.0-SNAPSHOT" { 
-	"ua.lviv.iot:work:jar:1.0-SNAPSHOT" -> "junit:junit:jar:3.8.1:test" ; 
-	"ua.lviv.iot:work:jar:1.0-SNAPSHOT" -> "org.junit.vintage:junit-vintage-engine:jar:5.9.2:test" ; 
-	"ua.lviv.iot:work:jar:1.0-SNAPSHOT" -> "org.junit.jupiter:junit-jupiter-api:jar:5.9.2:test" ; 
-	"org.junit.vintage:junit-vintage-engine:jar:5.9.2:test" -> "org.junit.platform:junit-platform-engine:jar:1.9.2:test" ; 
-	"org.junit.vintage:junit-vintage-engine:jar:5.9.2:test" -> "org.apiguardian:apiguardian-api:jar:1.1.2:test" ; 
-	"org.junit.jupiter:junit-jupiter-api:jar:5.9.2:test" -> "org.opentest4j:opentest4j:jar:1.2.0:test" ; 
-	"org.junit.jupiter:junit-jupiter-api:jar:5.9.2:test" -> "org.junit.platform:junit-platform-commons:jar:1.9.2:test" ; 
- } 
