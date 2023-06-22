@@ -8,5 +8,6 @@
         "lib/**/*.jar",
         "/home/volodymyr/Downloads/lombok.jar"
     ],
-    "java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "java.compile.nullAnalysis.mode": "automatic"
 }

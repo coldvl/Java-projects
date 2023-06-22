@@ -2,8 +2,6 @@ package ua.lviv.iot.algo.part1.lab2;
 import lombok.*;
 
 @Getter
-@Setter
-@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 
@@ -12,6 +10,5 @@ public abstract class AbstractAnimalHome {
     private String location;
     protected double area;
 
-    public abstract int calculateCostPerMonth();
-    
+    public abstract int calculateCostPerMonth();   
 }

@@ -1,15 +1,16 @@
 import org.junit.Test;
 import junit.framework.TestCase;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.stream.*;
+
+
 import ua.lviv.iot.algo.part1.lab2.AnimalHomeManager;
-import ua.lviv.iot.algo.part1.lab2.AbstractAnimalHome;
+
 import ua.lviv.iot.algo.part1.lab2.Farm;
 import ua.lviv.iot.algo.part1.lab2.Zoo;
 import ua.lviv.iot.algo.part1.lab2.Aquarium;
 import ua.lviv.iot.algo.part1.lab2.Sanctuary;
+
+
 import java.sql.Time;
 
 
@@ -25,7 +26,6 @@ public class TestForAnimalHomeManager
     Sanctuary sanctuary = new Sanctuary("Friendly Farms", "Canada", 100, 10, 20, 10, 20);
     
 
-    // test for method findCheapestAnimalHome
     @Test
     public void testFindCheapestAnimalHome() {
         animalHomeManager.addAnimalHome(farm);
@@ -35,7 +35,6 @@ public class TestForAnimalHomeManager
         TestCase.assertEquals(zoo, animalHomeManager.findCheapestAnimalHome());
     }
     
-    // test for method findAnimalHomesWithAreaLessThan
     @Test
     public void testFindAnimalHomesWithAreaLessThan() {
         animalHomeManager.addAnimalHome(farm);
@@ -43,7 +42,7 @@ public class TestForAnimalHomeManager
         animalHomeManager.addAnimalHome(aquarium);
         animalHomeManager.addAnimalHome(sanctuary);
         
-        TestCase.assertEquals(animalHomeManager.animalHomes, animalHomeManager.findAnimalHomesWithAreaLessThan(2000));
+        TestCase.assertEquals(animalHomeManager.getAnimalHomes(), animalHomeManager.findAnimalHomesWithAreaLessThan(2000));
     }
-    
+        
 }
