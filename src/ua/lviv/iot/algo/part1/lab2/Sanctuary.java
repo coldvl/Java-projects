@@ -1,6 +1,8 @@
 package ua.lviv.iot.algo.part1.lab2;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Getter
 @ToString
@@ -24,5 +26,15 @@ public class Sanctuary extends AbstractAnimalHome{
     @Override
     public int calculateCostPerMonth() {
         return (costPerDayPerAnimal * numberOfAnimals + costPerDayPerEndangeredAnimal * numberOfEndangeredAnimals) * DAYS_IN_MONTH;
-    }  
+    }
+    
+    @Override
+    public String getHeaders() {
+        return super.getHeaders() + "," + "numberOfEndangeredAnimals" + "," + "numberOfAnimals" + "," + "costPerDayPerAnimal" + "," + "costPerDayPerEndangeredAnimal";
+    }
+
+    @Override
+    public String toCSV() {
+        return super.toCSV() + "," + numberOfEndangeredAnimals + "," + numberOfAnimals + "," + costPerDayPerAnimal + "," + costPerDayPerEndangeredAnimal;
+    }
 }
